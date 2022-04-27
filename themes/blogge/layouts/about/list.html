@@ -7,7 +7,7 @@
         <div class="about-me">
           <img class="actor mb-3" src="{{ .Site.Params.authorThumb | absURL}}" alt="image">
           <h3>Hi I Am {{ .Site.Params.author }}</h3>
-          <p>{{ .Site.Params.about.description }} </p>
+          <p>{{ .Site.Params.description }} </p>
           <div class="banner">
             <div class="about-shape-right-top">
               <img src={{ "images/about/blob1.svg" | absURL }} alt="svg">
@@ -17,8 +17,8 @@
             </div>
             <img src="{{ .Site.Data.about.featureImage | absURL }}" alt="banner">
           </div>
-          <h3>{{ .Site.Data.about.bioTitle }}</h3>
-          <p> {{ .Site.Data.about.bioDescription | markdownify }}</p>
+          <h3>{{ .Site.Params.bioTitle }}</h3>
+          <p> {{ .Site.Params.bioDescription }}</p>
           </p>
           <h3>I am a social person</h3>
           <ul class="soicel-icon">
